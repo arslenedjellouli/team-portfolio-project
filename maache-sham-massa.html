@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sham Massa Maache</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ffeef8 0%, #fff0f6 100%);
+            color: #444;
+            line-height: 1.6;
+        }
+
+
+        nav {
+            background: rgba(179, 95, 148, 0.95);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(255, 105, 180, 0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff69b4;
+        }
+
+
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ffb6c1;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 20px rgba(255, 105, 180, 0.3);
+        }
+
+        h1 {
+            color: #ff69b4;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: #ff1493;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .bio {
+            color: #666;
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+
+        section {
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 5px 25px rgba(255, 105, 180, 0.15);
+        }
+
+        h2 {
+            color: #ff69b4;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .skill-item {
+            background: linear-gradient(135deg, #e5a4d2 0%, #ffc0cb 100%);
+            padding: 1rem;
+            border-radius: 12px;
+            text-align: center;
+            color: white;
+            font-weight: 600;
+            transition: transform 0.3s;
+        }
+
+        .skill-item:hover {
+            transform: translateY(-5px);
+        }
+
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .project-card {
+            background: #fff0f6;
+            padding: 1.5rem;
+            border-radius: 15px;
+            border: 2px solid #ffb6c1;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(255, 105, 180, 0.2);
+        }
+
+        .project-card h3 {
+            color: #3a0822;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-card p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+
+
+        .contact-info {
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .contact-btn {
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #fd369a 0%, #ec99c5 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: inline-block;
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(255, 105, 180, 0.4);
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #e074aa;
+            margin-top: 3rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1.1rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+            }
+
+            section {
+                margin: 2rem 1rem;
+                padding: 1.5rem;
+            }
+
+            .skills-grid {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+        <h1>Sham Massa Maache</h1>
+        <p class="subtitle">Artificial intelligence student</p>
+        <p class="bio">
+            Artificial intelligence student at ENSIA with a passion for coding, web development, and baking delicious
+            cookies.
+            Skilled in Python, C++, and React, I enjoy design, and creating innovative solutions.
+        </p>
+    </div>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills & Technologies</h2>
+        <div class="skills-grid">
+            <div class="skill-item">Python</div>
+            <div class="skill-item">C++</div>
+            <div class="skill-item">React</div>
+            <div class="skill-item">HTML/CSS</div>
+            <div class="skill-item">Git</div>
+            <div class="skill-item">Design</div>
+            <div class="skill-item">Problem Solving</div>
+            <div class="skill-item">UI/UX</div>
+            <div class="skill-item">Creative Thinking</div>
+            <div class="skill-item">Baking cookies</div>
+
+
+        </div>
+    </section>
+
+
+
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Health Risks Prediction</h3>
+                <p>A data mining project that helps doctors to predict health risks based on oligoscan results.
+                </p>
+
+            </div>
+            <div class="project-card">
+                <h3>AI timetable scheduler</h3>
+                <p>An AI-powered timetable scheduling tool that optimizes class schedules based on some preferences and
+                    availability.</p>
+            </div>
+            <div class="project-card">
+                <h3>Chain management system</h3>
+                <p>A comprehensive system for managing a restaurant's chain operations, enhancing efficiency and
+                    transparency.</p>
+            </div>
+            <div class="project-card">
+                <h3>Pet adoption website</h3>
+                <p>Website for adopting pets, featuring a user-friendly interface and a database of available animals.
+                    With selling and buying products features.</p>
+            </div>
+            <div class="project-card">
+                <h3>Cutekies</h3>
+                <p>Owner and founder of a cookies selling business
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-info">
+            <p>I'd love to hear from you! Whether it's a project collaboration.</p>
+            <div class="contact-links">
+                <a href="mailto:sham.massa.maache@ensia.edu.dz" class="contact-btn">Email Me</a>
+                <a href="https://www.linkedin.com/in/sham-massa-maache-0141ba323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                    class="contact-btn">LinkedIn</a>
+                <a href="https://github.com/pinkmassa" class="contact-btn">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Sham Massa Maache. Made with 💕</p>
+    </footer>
+</body>
+
+</html>
