@@ -46,3 +46,10 @@ Each `firstname-lastname.html` file represents a team member’s profile page, i
 https://arslenedjellouli.github.io/team-portfolio-project/
 
 ---
+
+## Team Retrospective
+
+At the beginning of the homework, our team held a meeting to discuss and agree on the overall workflow. We decided to adopt a professional structure using branches, pull requests, and code reviews to simulate a real development environment. Each member was responsible for creating a personal portfolio page on their own feature branch, and we all followed the same naming conventions and commit rules. This organization helped us stay consistent and understand how collaborative software projects are managed. One of the main challenges we faced was dealing with merge conflicts when integrating everyone’s work. The most common conflict occurred in the `index.html` file, since every teammate had to edit it to include their own profile link. To solve this, we reviewed the conflicting code together and made sure all links were correctly placed without overwriting anyone’s changes. We also learned to always pull the latest updates from the `develop` branch before pushing new commits, which helped prevent similar issues later on. Another key aspect of our workflow was the pull request review process. We agreed that no one could push something that didn’t work or wasn’t properly reviewed, which ensured that our final version remained functional and clean. Reviewing each other’s code improved our attention to detail and understanding of GitHub collaboration. Overall, this homework helped us strengthen both our technical and teamwork skills while experiencing a realistic collaborative development process from start to finish.
+
+
+---
