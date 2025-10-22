@@ -41,3 +41,8 @@ Each `firstname-lastname.html` file represents a team member’s profile page, i
 * A link to their GitHub profile
 
 ---
+
+## Live Website
+https://arslenedjellouli.github.io/team-portfolio-project/
+
+---
